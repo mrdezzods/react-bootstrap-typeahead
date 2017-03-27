@@ -555,6 +555,9 @@ const Typeahead = React.createClass({
         if (showMenu && activeItem) {
           this._handleAddOption(activeItem);
         }
+        if (this.props.onEnter) {
+          this.props.onEnter();
+        }
         break;
     }
   },
